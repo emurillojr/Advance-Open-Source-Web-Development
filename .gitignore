@@ -1,3 +1,5 @@
 node_modules/
 lab/
 /nbproject/
+nbproject/private
+nbproject/
