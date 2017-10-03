@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> AJAX(fetch) request</h1>
+        <br>
+        <div> </div>
+        <br>
+        <div id = "test"> </div>
+
+
+        <script type="text/javascript">
+
+            let div = document.querySelector('div');
+            let htmlStr = '';
+
+            let el = document.querySelector("#test");
+            let htmlStr2 = '';
+
+            let myRequest = 'http://localhost:3000/todo';
+
+
+            fetch(myRequest)
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (json) {
+
+                        // using ` and $
+                        for (var i = 0; i < json.length; i++) {
+                            htmlStr += '<p>';
+                            htmlStr +=
+                                    `UserId: ${json[i].userId} 
+                                    ID: ${json[i].id} 
+                                    Title: ${json[i].title} 
+                                    Completed: ${json[i].completed}`;
+                            htmlStr += '</p>';
+                        }
+
+                        div.innerHTML += htmlStr;
+                        console.log(json);
+                        //});
+
+                        
+                        for (var i = 0; i < json.length; i++) {
+                            htmlStr2 += '<p> <i>';
+                            htmlStr2 += 'UserId: &nbsp;' + json[i].userId + '&nbsp;';
+                            htmlStr2 += 'ID: &nbsp;' + json[i].id + '&nbsp;';
+                            htmlStr2 += 'Title: &nbsp;' + json[i].title + '&nbsp;';
+                            htmlStr2 += 'Completed: &nbsp;' + json[i].completed + '&nbsp;';
+                            htmlStr2 += '</i> </p>';
+                        }
+
+                        el.innerHTML += htmlStr2;
+                        console.log(json);
+
+                    });
+
+
+        </script>
+
+    </body>
+</html>
