@@ -3,3 +3,6 @@ lab/
 /nbproject/
 nbproject/private
 nbproject/
+nbproject/*
+!nbproject/project.properties
+!nbproject/project.xml
