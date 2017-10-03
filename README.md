@@ -7,6 +7,3 @@ Apply JavaScript concepts to write clean server and client side JavaScript code 
 Explain the different components of the Node stack as evidenced by correct answers to midterm and final exam questions and active participation in discussion forums.<br>
 Organize complex web applications that maintain a variety of external source modules and user code by using a task runner like NodeMon as evidenced by successful completion of a final project.<br>
 Create web applications with a Mongo database layer, Express/Node backend and PUG  frontend as evidenced by successful completion of lab exercises and a final project.<br>
-# AdvWebDevFall2017
-Advance Open Source Web Development <br>
-MEAN Stack
