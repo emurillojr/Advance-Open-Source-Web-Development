@@ -1,4 +1,5 @@
 # Advance-Open-Source-Web-Development
+MEAN stack <br>
 Explores Node.js. <br>
 Create web applications that use Mongo DB for the data layer, Express and Node for the server-side logic and front-ends are built using Pug. Other topics include: NPM, routing and REST API's. <br>
 Course objectives<br>
