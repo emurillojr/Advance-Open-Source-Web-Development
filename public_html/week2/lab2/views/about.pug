@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  ul.navbar-nav
+        li.nav-item
+            a.nav-link.active(href='/index') Home
+        li.nav-item
+            a.nav-link(href='/about') About
+        li.nav-item
+            a.nav-link(href='/form') Form
+
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2= title
+        img(src='./images/flip.jpg', alt="puppy")
+        br
+        br
+        h6= lorenIpsumParagraph
+        br
+        h6= lorenIpsumParagraph2

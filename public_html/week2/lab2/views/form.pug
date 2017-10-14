@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  ul.navbar-nav
+        li.nav-item
+            a.nav-link.active(href='/index') Home
+        li.nav-item
+            a.nav-link(href='/about') About
+        li.nav-item
+            a.nav-link(href='/form') Form
+
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2= title
+        // form
+        form(method='POST', action='/result', role="form")
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='first and last' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='comments') Comments:
+            textarea.form-control(type='text', placeholder='comments' name="comments", rows="5") #{comments}
+          button.btn.btn-primary(type='submit') Submit
