@@ -1,7 +1,7 @@
 # Advance-Open-Source-Web-Development
-MEAN stack <br>
-Explores Node.js. <br>
-Create web applications that use Mongo DB for the data layer, Express and Node for the server-side logic and front-ends are built using Pug. Other topics include: NPM, routing and REST API's. <br>
+MEAN stack <br><br>
+Explores Node.js. <br><br>
+Create web applications that use Mongo DB for the data layer, Express and Node for the server-side logic and front-ends are built using Pug. Other topics include: NPM, routing and REST API's. <br><br>
 Course objectives<br>
 Apply JavaScript concepts to write clean server and client side JavaScript code as evidenced by successful completion of lab exercises and a final.<br>
 Explain the different components of the Node stack as evidenced by correct answers to midterm and final exam questions and active participation in discussion forums.<br>
