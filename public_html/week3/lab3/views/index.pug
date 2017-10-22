@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2= title
+        // form
+        form(method='POST', action='/index', role="form")
+          div.form-group
+            label(for='numbers') Choose a Number:
+            br
+            br
+            select(name="number")
+                option(value='0', disabled, selected=true)
+                each val in [3,4,5,10,20]
+                  option= val
+            br
+            br
+            br
+            button.btn.btn-primary(type='submit') Submit
+        +generateGridColors(numberChosen)
+
