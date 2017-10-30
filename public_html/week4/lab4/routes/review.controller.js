@@ -22,8 +22,8 @@ module.exports.home = function (req, res) {
                     return;
                 })
                 .catch(function (err) {
-                    msg = 'employee was not Saved';
-                    return err
+                    msg = 'employee was not Saved, All fields required.';
+                    return err;
                     //return err.message;   
                 }).then(function (err) {
             res.render('index', {
