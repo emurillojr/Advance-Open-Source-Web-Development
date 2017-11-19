@@ -12,9 +12,5 @@ class Controller {
     this.Model.clearDataBindModel()
     return window.Promise.resolve()
   }
-
-  // update() {
-  //   return this.Model.updatePageLoad()
-  // }
-
+  /
 }

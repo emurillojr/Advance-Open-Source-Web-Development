@@ -13,7 +13,7 @@ class Model extends BaseModel {
       .then(data => {
         data.forEach((employee) => {
           employee.startDateFormatted = this.formatDate(employee.startDate) //**
-          employee.salaryFormatted = this.formatDate(employee.salary) //**
+          employee.salaryFormatted = this.formatNumber(employee.salary) //**
         })
         return Components.employeeTable(data).then(html => {
           return this.dataBindModel.employeeTable = html
